@@ -95,7 +95,7 @@ fieldset {
   border: 1px solid $border-colour;
 
   // Disable webkit appearance and remove rounded corners
-  -webkit-appearance: none;
+ // -webkit-appearance: none;
   border-radius: 0;
 
   @include media(tablet) {
@@ -127,7 +127,6 @@ fieldset {
   width: 12.5%;
 }
 
-
 // Radio buttons
 .form-radio {
   display: block;
@@ -149,6 +148,13 @@ fieldset {
   margin: -2px 5px 0 0;
 }
 
+// Buttons
+.form .button {
+  @include media(mobile) {
+    width: 100%;
+  }
+}
+
 
 // Form validation
 @import "forms/form-validation";
@@ -157,3 +163,4 @@ fieldset {
 // Form patterns
 @import "forms/form-date";
 @import "forms/form-block-labels";
+@import "forms/form-ni";

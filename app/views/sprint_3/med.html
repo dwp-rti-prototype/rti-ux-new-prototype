@@ -1,0 +1,360 @@
+{{<layout}}
+
+{{$pageTitle}}
+  GOV.UK prototyping kit
+{{/pageTitle}}
+
+{{$propositionHeader}}
+  {{>includes/propositional_navigation}}
+{{/propositionHeader}}
+
+{{$content}}
+
+
+<main id="content" role="main">
+
+ <div class="grid-row">        
+
+      <!--   <div class="column-quarter grid-col" style="padding-bottom:90px; padding-top:30px; margin-left:-40px">
+              <ul class="main-nav">
+                <li id="nav-home"><a href="login">Date range</a></li>
+                <li id="nav-job" class="selected"><a href="job">Other filters?</a></li>
+                <li id="nav-benefit"><a href="benefit">Nav 1</a></li>
+                <li id="nav-admin"><a href="#">Nav 1</a></li>
+                <li id="nav-stats"><a href="#">Nav 1</a></li>
+              </ul>
+          </div> -->
+
+  <!-- Start three quarters container for main content columns -->
+  <div class="column" style="margin-left:-50px">
+
+    <div class="grid-row">
+
+        <div class="column-half">   
+
+             <h3 class="heading-small">View income</h3>
+     <!--       <p>Retrieve record by:</p> -->
+
+               <div class="form-group">
+                  <label class="form-label" for="inital">NINO</label>
+                  <input class="form-control" id="inital" type="text"> &nbsp;
+                  <a href="job_nino" class="button button-get-started" value="Submit">Search</a>
+                </div> 
+
+           </div>
+
+     <!--End NINO row-->
+       </div>    
+
+     <div class="grid-row">
+
+       <div class="column-half"> 
+
+          <p class="bold">Income for Lucy Turner<br>
+          National Insurance Number: AA000001B</p>
+
+       </div>
+
+       <div class="column-half"> 
+
+          <div class="form-group">
+                <label class="form-label" for="title">Choose employer:</label>
+             <!--         <span class="form-hint">Enter claimant postcode, eg LS11 3PH</span>
+                  <input class="form-control" id="inital" type="text">
+                  <a href="service_confirm" class="button button-get-started postcode-finder" value="Submit">Find address</a> -->
+                <select class="select form-control">
+                      <option value="Select">Select</option>
+                      <option value="Sun Alliance">Sun Alliance</option>
+                      <option value="HSBC">HSBC</option>
+                      <option value="Halifax">Halifax</option>
+                      <option value="Asda">Asda</option>        
+                  </select> 
+            </div>
+       </div>
+
+    <!--End Name and NINO data row-->
+     </div>
+
+    <div class="grid-row"> 
+
+     <div class="column">   
+
+        <br>
+
+        <!-- 3rd level nav buttons -->
+            <div id="id-claimant-actions" class="grid-wrapper gutter-half-top">
+
+                <div class="grid grid-1-5">
+                  <div class="inner-block left">
+                    <a id="view_record" href="job_record_confirm" class="menu-item action selected">
+                      <strong>All records</strong>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="grid grid-1-5">
+                  <div class="inner-block left">
+                    <a id="edit_record" href="job_edit" class="menu-item action">
+                      <strong>3 months</strong>
+                    </a>
+                  </div>
+                </div>
+
+        <!--        <div class="grid grid-1-5">
+                  <div class="inner-block left">
+                    <a id="interview" href="job_interview" class="menu-item">
+                      <strong>Interview</strong>
+                    </a>
+                  </div>
+                </div> -->
+
+               <div class="grid grid-1-5">
+                  <div class="inner-block left">
+                    <a id="appointments" href="job_next" class="menu-item action">
+                      <strong>1 month</strong>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="grid grid-1-5">
+                  <div class="inner-block left">
+                    <a id="closure" href="job_closure" class="menu-item">
+                      <strong>1 week</strong>
+                    </a>
+                  </div>
+                </div>       
+
+             </div> 
+
+           </div>
+
+      </div>
+
+      <br>
+      <br>
+
+
+     <div class="grid-row">
+
+       <div class="column">
+
+            <ul class="tabs" id="tbl-payments">
+                <li><a href="small#tbl-payments">Slim table</a></li>
+                <li class="selected"><a href="med#tbl-payments">Medium table</a></li>
+                <li><a href="big#tbl-payments">Big table</a></li>
+  <!--              <li><a href="benefit_edit">Edit record</a></li>
+                <li><a href="maintenance">Maintenance</a></li>
+                <li><a href="payment">Payment</a></li>
+                <li><a href="closure">Closure</a></li>      -->  
+             </ul> 
+
+
+
+
+        <h3 class="heading-small">Sun Alliance: 21/12/14 - 06/04/15</h3>
+
+             <table id="tbl-payments" summary="Table for EmployerName1 Pension,  Start date not stated  to End date not stated">
+                 <thead>
+                 <tr>
+                     <th scope="col" id="th-date">Date paid</th>
+                     <th scope="col" id="th-tax-year" class="textCenter">Tax year</th>
+                     <th scope="col" id="th-frequency" class="textCenter">Frequency</th>
+                     <th scope="col" id="th-week-period" class="textCenter">Period</th>
+                     <th scope="col" id="th-gross" class="numeric">Gross</th>
+                     <th scope="col" id="th-net" class="numeric">Net</th>
+                     <th scope="col" id="th-payments-not-subject-to-tax" class="numeric">Payments not subject to tax</th>
+                     <th scope="col" id="th-deductions-from-net-pay" class="numeric">Deductions from net pay</th>
+                     <th scope="col" id="th-deductions-from-gross-pay" class="numeric">Deductions from gross pay</th>
+                     <th scope="col" id="th-benefits-in-kind" class="numeric">Benefits in kind</th>
+                     <th scope="col" id="th-taxable-pay-ytd">Taxable pay (inc Benefits) YTD</th>
+                     <th scope="col" id="th-tax-ytd">Total tax YTD</th>
+                     <th scope="col" id="th-employee-contributions-ytd">Employee contributions YTD</th>
+                 </tr>
+                 </thead>
+                 <tbody>
+          <tr>
+              <td>01/05/15</td>
+              <td class="textCenter">15-16</td>
+              <td class="textCenter">Monthly</td>
+              
+              <td class="textCenter">1</td>
+              <td class="numeric">69.67</td>
+              <td class="numeric" scope="col">55.87</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">
+                <a id="deductions-breakdown" href="#" data-date="01/05/15" data-deduction="13.80" data-tax="13.80" data-nic="0.00" data-pensioncontribution="0.00" class="deductions">
+                  <span>13.80</span>
+                </a>
+              </td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">69.67</td>
+                      <td class="numeric">13.80</td>
+                      <td class="numeric">0.00</td>
+             
+
+          </tr>
+          <tr>
+              <td>01/04/15</td>
+              <td class="textCenter">14-15</td>
+              <td class="textCenter">Monthly</td>
+              
+              <td class="textCenter">12</td>
+              <td class="numeric">69.67</td>
+              <td class="numeric" scope="col">55.67</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">
+                <a id="deductions-breakdown" href="#" data-date="01/04/15" data-deduction="14.00" data-tax="14.00" data-nic="0.00" data-pensioncontribution="0.00" class="deductions">
+                  <span>14.00</span>
+                </a>
+              </td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">836.04</td>
+                      <td class="numeric">167.20</td>
+                      <td class="numeric">0.00</td>
+         </tr>
+         <tr>
+              <td>27/02/15</td>
+              <td class="textCenter">14-15</td>
+              <td class="textCenter">Monthly</td>
+              
+              <td class="textCenter">11</td>
+              <td class="numeric">69.67</td>
+              <td class="numeric" scope="col">55.67</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">
+                <a id="deductions-breakdown" href="#" data-date="27/02/15" data-deduction="14.00" data-tax="14.00" data-nic="0.00" data-pensioncontribution="0.00" class="deductions">
+                  <span>14.00</span>
+                </a>
+              </td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">766.37</td>
+                      <td class="numeric">153.20</td>
+                      <td class="numeric">0.00</td>
+
+           </tr>
+           <tr>
+              <td>30/01/15</td>
+              <td class="textCenter">14-15</td>
+              <td class="textCenter">Monthly</td>
+              
+              <td class="textCenter">10</td>
+              <td class="numeric">69.67</td>
+              <td class="numeric" scope="col">55.87</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">
+                <a id="deductions-breakdown" href="#" data-date="30/01/15" data-deduction="13.80" data-tax="13.80" data-nic="0.00" data-pensioncontribution="0.00" class="deductions">
+                  <span>13.80</span>
+                </a>
+              </td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">696.70</td>
+                      <td class="numeric">139.20</td>
+                      <td class="numeric">0.00</td>
+           </tr>
+           <tr>
+              <td>31/12/14</td>
+              <td class="textCenter">14-15</td>
+              <td class="textCenter">Monthly</td>
+              
+              <td class="textCenter">9</td>
+              <td class="numeric">69.67</td>
+              <td class="numeric" scope="col">55.67</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">
+                <a id="deductions-breakdown" href="#" data-date="31/12/14" data-deduction="14.00" data-tax="14.00" data-nic="0.00" data-pensioncontribution="0.00" class="deductions">
+                  <span>14.00</span>
+                </a>
+              </td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">627.03</td>
+                      <td class="numeric">125.40</td>
+                      <td class="numeric">0.00</td>
+         </tr>
+         <tr>
+              <td>01/12/14</td>
+              <td class="textCenter">14-15</td>
+              <td class="textCenter">Monthly</td>
+              
+              <td class="textCenter">8</td>
+              <td class="numeric">69.67</td>
+              <td class="numeric" scope="col">55.67</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">
+                <a id="deductions-breakdown" href="#" data-date="01/12/14" data-deduction="14.00" data-tax="14.00" data-nic="0.00" data-pensioncontribution="0.00" class="deductions">
+                  <span>14.00</span>
+                </a>
+              </td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">557.36</td>
+                      <td class="numeric">111.40</td>
+                      <td class="numeric">0.00</td>
+          </tr>
+          <tr>
+              <td>31/10/14</td>
+              <td class="textCenter">14-15</td>
+              <td class="textCenter">Monthly</td>
+              
+              <td class="textCenter">7</td>
+              <td class="numeric">69.67</td>
+              <td class="numeric" scope="col">55.87</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">
+                <a id="deductions-breakdown" href="#" data-date="31/10/14" data-deduction="13.80" data-tax="13.80" data-nic="0.00" data-pensioncontribution="0.00" class="deductions">
+                  <span>13.80</span>
+                </a>
+              </td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">487.69</td>
+                      <td class="numeric">97.40</td>
+                      <td class="numeric">0.00</td>
+          </tr>
+          <tr>
+              <td>01/10/14</td>
+              <td class="textCenter">14-15</td>
+              <td class="textCenter">Monthly</td>
+              
+              <td class="textCenter">6</td>
+              <td class="numeric">69.67</td>
+              <td class="numeric" scope="col">55.67</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">
+                <a id="deductions-breakdown" href="#" data-date="01/10/14" data-deduction="14.00" data-tax="14.00" data-nic="0.00" data-pensioncontribution="0.00" class="deductions">
+                  <span>14.00</span>
+                </a>
+              </td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">418.02</td>
+                      <td class="numeric">83.60</td>
+                      <td class="numeric">0.00</td>
+            </tr>
+        </tbody>
+      </table>
+
+     
+
+      </div>
+      <!-- End col -->
+
+    <!-- End tabs and table data row-->       
+      </div>
+
+<!-- End 3/4 content column -->
+   </div>
+
+<!-- End row -->
+ </div>     
+
+
+</main>
+{{/content}}
+
+{{/layout}}
+
