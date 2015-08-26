@@ -77,18 +77,18 @@
         <!-- 3rd level nav buttons -->
             <div id="id-claimant-actions" class="grid-wrapper gutter-half-top">
 
-                <div class="grid grid-1-5">
+                <div class="grid grid-1-15">
                   <div class="inner-block left">
                     <a id="view_record" href="job_record_confirm" class="menu-item action selected">
-                      <strong>All records</strong>
+                      <strong>View all records</strong>
                     </a>
                   </div>
                 </div>
 
-                <div class="grid grid-1-5">
+                <div class="grid grid-1-15">
                   <div class="inner-block left">
                     <a id="edit_record" href="job_edit" class="menu-item action">
-                      <strong>3 months</strong>
+                      <strong>View 3 months</strong>
                     </a>
                   </div>
                 </div>
@@ -101,21 +101,29 @@
                   </div>
                 </div> -->
 
-               <div class="grid grid-1-5">
+               <div class="grid grid-1-15">
                   <div class="inner-block left">
                     <a id="appointments" href="job_next" class="menu-item action">
-                      <strong>1 month</strong>
+                      <strong>View 1 month</strong>
                     </a>
                   </div>
                 </div>
 
-                <div class="grid grid-1-5">
+                <div class="grid grid-1-15">
                   <div class="inner-block left">
                     <a id="closure" href="job_closure" class="menu-item">
-                      <strong>1 week</strong>
+                      <strong>View 1 week</strong>
                     </a>
                   </div>
-                </div>       
+                </div>     
+
+                <div class="grid grid-1-15">
+                  <div class="inner-block left">
+                    <a id="closure" href="job_closure" class="menu-item">
+                      <strong>All records PDF</strong>
+                    </a>
+                  </div>
+                </div>     
 
              </div> 
 
@@ -130,16 +138,16 @@
        <div class="column">
 
             <ul class="tabs" id="tbl-payments">
-                <li><a href="small#tbl-payments">Slim table</a></li>
-                <li><a href="med#tbl-payments">Medium table</a></li>
-                <li class="selected"><a href="big#tbl-payments">Big table</a></li>
+                <li><a href="small#tbl-payments">Summary view</a></li>
+                <li><a href="med#tbl-payments">Detailed view</a></li>
+                <li class="selected"><a href="big#tbl-payments">Extended view</a></li>
   <!--              <li><a href="benefit_edit">Edit record</a></li>
                 <li><a href="maintenance">Maintenance</a></li>
                 <li><a href="payment">Payment</a></li>
                 <li><a href="closure">Closure</a></li>      -->  
              </ul> 
 
-          <h3 class="heading-medium">Sun Alliance: 21/12/14 - 06/04/15</h3>
+          <h3 class="heading-medium" width="50%">Sun Alliance: 21/12/14 - 06/04/15</h3>
 
              <table id="tbl-payments" summary="Table for EmployerName1 Pension,  Start date not stated  to End date not stated">
                  <thead>
@@ -452,6 +460,9 @@
              
      <br>
      <br>
+
+     <p><a href="job_nino" class="button button-get-started" value="Submit">Make PDF</a></p>
+
 
       </div>
       <!-- End col -->
