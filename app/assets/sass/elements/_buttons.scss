@@ -70,6 +70,14 @@
   width:20%;
 }
 
+.grid-1-15 {
+  width:15%;
+}
+
+.grid-1-10 {
+  width:10%;
+}
+
 .left {
   margin-right:15px;
 }
@@ -78,11 +86,14 @@
     background: #f8f8f8;
     border-bottom: 1px solid #bfc1c3;
     display: block;
-    padding: 15px 30px 0px 30px;
+    padding: 15px 15px 0px 15px;
     min-height: 2em;
     margin-bottom: 15px;
     text-decoration: none;
     white-space: nowrap;
+      a:active {
+      padding: 15px 0 0 0;
+    }
 }
 
 .grid .selected {
