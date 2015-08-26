@@ -1,0 +1,59 @@
+{{<layout}}
+
+{{$pageTitle}}
+  GOV.UK prototyping kit
+{{/pageTitle}}
+
+{{$propositionHeader}}
+  {{>includes/propositional_navigation}}
+{{/propositionHeader}}
+
+{{$content}}
+
+
+<main id="content" role="main">
+
+ <div class="grid-row">        
+
+      <!--   <div class="column-quarter grid-col" style="padding-bottom:90px; padding-top:30px; margin-left:-40px">
+              <ul class="main-nav">
+                <li id="nav-home"><a href="login">Date range</a></li>
+                <li id="nav-job" class="selected"><a href="job">Other filters?</a></li>
+                <li id="nav-benefit"><a href="benefit">Nav 1</a></li>
+                <li id="nav-admin"><a href="#">Nav 1</a></li>
+                <li id="nav-stats"><a href="#">Nav 1</a></li>
+              </ul>
+          </div> -->
+
+  <!-- Start three quarters container for main content columns -->
+  <div class="column" style="margin-left:-50px">
+
+    <div class="grid-row">
+
+        <div class="column-half">   
+
+<br>     <!--       <p>Retrieve record by:</p> -->
+
+               <div class="form-group">
+                  <label class="form-label" for="inital">NINO</label>
+                  <input class="form-control" id="inital" type="text"> &nbsp;
+                  <a href="small" class="button button-get-started" value="Submit">Search</a>
+                </div> 
+
+           </div>
+
+     <!--End NINO row-->
+       </div>    
+
+<!-- End 3/4 content column -->
+   </div>
+
+<!-- End row -->
+ </div>     
+
+
+</main>
+{{/content}}
+
+{{/layout}}
+

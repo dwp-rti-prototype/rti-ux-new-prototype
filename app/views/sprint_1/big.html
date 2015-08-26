@@ -57,7 +57,7 @@
                   <input class="form-control" id="inital" type="text">
                   <a href="service_confirm" class="button button-get-started postcode-finder" value="Submit">Find address</a> -->
                 <select class="select form-control">
-                      <option value="Select">Select</option>
+                      <option value="All">All employers/pensions</option>
                       <option value="Sun Alliance">Sun Alliance (08/04/15 - present)</option>
                       <option value="HSBC">HSBC (01/10/14 - 07/01/15)</option>
                       <option value="Halifax">Halifax (08/04/15 - 30/09/14)</option>
@@ -147,7 +147,7 @@
                 <li><a href="closure">Closure</a></li>      -->  
              </ul> 
 
-          <h3 class="heading-medium" width="50%">Sun Alliance: 21/12/14 - 06/04/15</h3>
+          <h3 class="heading-medium">Sun Alliance: 21/12/14 - 06/04/15</h3>
 
              <table id="tbl-payments" summary="Table for EmployerName1 Pension,  Start date not stated  to End date not stated">
                  <thead>
@@ -457,11 +457,942 @@
                  
                  </tbody>
              </table>
-             
-     <br>
-     <br>
 
-     <p><a href="job_nino" class="button button-get-started" value="Submit">Make PDF</a></p>
+          <h3 class="heading-medium">HSBC (01/10/14 - 07/01/15)</h3>
+
+             <table id="tbl-payments" summary="Table for EmployerName1 Pension,  Start date not stated  to End date not stated">
+                 <thead>
+                 <tr>
+                     <th scope="col" id="th-date">Date paid</th>
+                     <th scope="col" id="th-tax-year" class="textCenter">Tax year</th>
+                     <th scope="col" id="th-frequency" class="textCenter">Frequency</th>
+                     <th scope="col" id="th-week-period" class="textCenter">Period</th>
+                     <th scope="col" id="th-gross" class="numeric">Gross</th>
+                     <th scope="col" id="th-net" class="numeric">Net</th>
+                     <th scope="col" id="th-payments-not-subject-to-tax" class="numeric">Payments not subject to tax</th>
+                     <th scope="col" id="th-deductions-from-net-pay" class="numeric">Deductions from net pay</th>
+                     <th scope="col" id="th-deductions-from-gross-pay" class="numeric">Deductions from gross pay</th>
+                     <th scope="col" id="th-benefits-in-kind" class="numeric">Benefits in kind</th>
+                     <th scope="col" id="th-taxable-pay-ytd">Taxable pay (inc Benefits) YTD</th>
+                     <th scope="col" id="th-tax-ytd">Total tax YTD</th>
+                     <th scope="col" id="th-employee-contributions-ytd">Employee contributions YTD</th>
+                     <th scope="col" id="th-taxable-benefits-ytd">Benefits taxed YTD</th>
+                     <th scope="col" id="th-pension-net-ytd">Pension under net pay YTD</th>
+                     <th scope="col" id="th-pension-not-net-ytd">Pension not under net pay YTD</th>
+                     <th scope="col" id="th-merger-indicator">RTE submission date</th>
+                     <th scope="col" id="th-payment-indicator"></th>
+                 </tr>
+                 </thead>
+                 <tbody>
+                 <tr>
+              <td>01/05/15</td>
+              <td class="textCenter">15-16</td>
+              <td class="textCenter">Monthly</td>
+              
+              <td class="textCenter">1</td>
+              <td class="numeric">69.67</td>
+              <td class="numeric" scope="col">55.87</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">
+                <a id="deductions-breakdown" href="#" data-date="01/05/15" data-deduction="13.80" data-tax="13.80" data-nic="0.00" data-pensioncontribution="0.00" class="deductions">
+                  <span>13.80</span>
+                </a>
+              </td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">69.67</td>
+                      <td class="numeric">13.80</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td>04/05/15</td>
+              <td>
+                         
+                         
+                         
+                         
+                         <!--
+                         *** Flexible pension column not available yet**
+                         <p data-th-if="${payment.????}">Flexible pension</p>
+                         -->
+                      </td>
+
+                 </tr>
+                 <tr>
+              <td>01/04/15</td>
+              <td class="textCenter">14-15</td>
+              <td class="textCenter">Monthly</td>
+              
+              <td class="textCenter">12</td>
+              <td class="numeric">69.67</td>
+              <td class="numeric" scope="col">55.67</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">
+                <a id="deductions-breakdown" href="#" data-date="01/04/15" data-deduction="14.00" data-tax="14.00" data-nic="0.00" data-pensioncontribution="0.00" class="deductions">
+                  <span>14.00</span>
+                </a>
+              </td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">836.04</td>
+                      <td class="numeric">167.20</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td>04/04/15</td>
+              <td>
+                         
+                         
+                         
+                         
+                         <!--
+                         *** Flexible pension column not available yet**
+                         <p data-th-if="${payment.????}">Flexible pension</p>
+                         -->
+                      </td>
+
+                 </tr>
+                 <tr>
+              <td>27/02/15</td>
+              <td class="textCenter">14-15</td>
+              <td class="textCenter">Monthly</td>
+              
+              <td class="textCenter">11</td>
+              <td class="numeric">69.67</td>
+              <td class="numeric" scope="col">55.67</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">
+                <a id="deductions-breakdown" href="#" data-date="27/02/15" data-deduction="14.00" data-tax="14.00" data-nic="0.00" data-pensioncontribution="0.00" class="deductions">
+                  <span>14.00</span>
+                </a>
+              </td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">766.37</td>
+                      <td class="numeric">153.20</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td>02/03/15</td>
+              <td>
+                         
+                         
+                         
+                         
+                         <!--
+                         *** Flexible pension column not available yet**
+                         <p data-th-if="${payment.????}">Flexible pension</p>
+                         -->
+                      </td>
+
+                 </tr>
+                 <tr>
+              <td>30/01/15</td>
+              <td class="textCenter">14-15</td>
+              <td class="textCenter">Monthly</td>
+              
+              <td class="textCenter">10</td>
+              <td class="numeric">69.67</td>
+              <td class="numeric" scope="col">55.87</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">
+                <a id="deductions-breakdown" href="#" data-date="30/01/15" data-deduction="13.80" data-tax="13.80" data-nic="0.00" data-pensioncontribution="0.00" class="deductions">
+                  <span>13.80</span>
+                </a>
+              </td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">696.70</td>
+                      <td class="numeric">139.20</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td>02/02/15</td>
+              <td>
+                         
+                         
+                         
+                         
+                         <!--
+                         *** Flexible pension column not available yet**
+                         <p data-th-if="${payment.????}">Flexible pension</p>
+                         -->
+                      </td>
+
+                 </tr>
+                 <tr>
+              <td>31/12/14</td>
+              <td class="textCenter">14-15</td>
+              <td class="textCenter">Monthly</td>
+              
+              <td class="textCenter">9</td>
+              <td class="numeric">69.67</td>
+              <td class="numeric" scope="col">55.67</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">
+                <a id="deductions-breakdown" href="#" data-date="31/12/14" data-deduction="14.00" data-tax="14.00" data-nic="0.00" data-pensioncontribution="0.00" class="deductions">
+                  <span>14.00</span>
+                </a>
+              </td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">627.03</td>
+                      <td class="numeric">125.40</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td>03/01/15</td>
+              <td>
+                         
+                         
+                         
+                         
+                         <!--
+                         *** Flexible pension column not available yet**
+                         <p data-th-if="${payment.????}">Flexible pension</p>
+                         -->
+                      </td>
+
+                 </tr>
+                 <tr>
+              <td>01/12/14</td>
+              <td class="textCenter">14-15</td>
+              <td class="textCenter">Monthly</td>
+              
+              <td class="textCenter">8</td>
+              <td class="numeric">69.67</td>
+              <td class="numeric" scope="col">55.67</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">
+                <a id="deductions-breakdown" href="#" data-date="01/12/14" data-deduction="14.00" data-tax="14.00" data-nic="0.00" data-pensioncontribution="0.00" class="deductions">
+                  <span>14.00</span>
+                </a>
+              </td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">557.36</td>
+                      <td class="numeric">111.40</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td>04/12/14</td>
+              <td>
+                         
+                         
+                         
+                         
+                         <!--
+                         *** Flexible pension column not available yet**
+                         <p data-th-if="${payment.????}">Flexible pension</p>
+                         -->
+                      </td>
+
+                 </tr>
+                 <tr>
+              <td>31/10/14</td>
+              <td class="textCenter">14-15</td>
+              <td class="textCenter">Monthly</td>
+              
+              <td class="textCenter">7</td>
+              <td class="numeric">69.67</td>
+              <td class="numeric" scope="col">55.87</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">
+                <a id="deductions-breakdown" href="#" data-date="31/10/14" data-deduction="13.80" data-tax="13.80" data-nic="0.00" data-pensioncontribution="0.00" class="deductions">
+                  <span>13.80</span>
+                </a>
+              </td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">487.69</td>
+                      <td class="numeric">97.40</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td>03/11/14</td>
+              <td>
+                         
+                         
+                         
+                         
+                         <!--
+                         *** Flexible pension column not available yet**
+                         <p data-th-if="${payment.????}">Flexible pension</p>
+                         -->
+                      </td>
+
+                 </tr>
+                 <tr>
+              <td>01/10/14</td>
+              <td class="textCenter">14-15</td>
+              <td class="textCenter">Monthly</td>
+              
+              <td class="textCenter">6</td>
+              <td class="numeric">69.67</td>
+              <td class="numeric" scope="col">55.67</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">
+                <a id="deductions-breakdown" href="#" data-date="01/10/14" data-deduction="14.00" data-tax="14.00" data-nic="0.00" data-pensioncontribution="0.00" class="deductions">
+                  <span>14.00</span>
+                </a>
+              </td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">418.02</td>
+                      <td class="numeric">83.60</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td>04/10/14</td>
+              <td>
+                         
+                         
+                         
+                         
+                         <!--
+                         *** Flexible pension column not available yet**
+                         <p data-th-if="${payment.????}">Flexible pension</p>
+                         -->
+                      </td>
+
+                 </tr>
+                 
+                 
+                 </tbody>
+             </table>
+
+
+          <h3 class="heading-medium">Halifax (08/04/15 - 30/09/14)</h3>
+
+             <table id="tbl-payments" summary="Table for EmployerName1 Pension,  Start date not stated  to End date not stated">
+                 <thead>
+                 <tr>
+                     <th scope="col" id="th-date">Date paid</th>
+                     <th scope="col" id="th-tax-year" class="textCenter">Tax year</th>
+                     <th scope="col" id="th-frequency" class="textCenter">Frequency</th>
+                     <th scope="col" id="th-week-period" class="textCenter">Period</th>
+                     <th scope="col" id="th-gross" class="numeric">Gross</th>
+                     <th scope="col" id="th-net" class="numeric">Net</th>
+                     <th scope="col" id="th-payments-not-subject-to-tax" class="numeric">Payments not subject to tax</th>
+                     <th scope="col" id="th-deductions-from-net-pay" class="numeric">Deductions from net pay</th>
+                     <th scope="col" id="th-deductions-from-gross-pay" class="numeric">Deductions from gross pay</th>
+                     <th scope="col" id="th-benefits-in-kind" class="numeric">Benefits in kind</th>
+                     <th scope="col" id="th-taxable-pay-ytd">Taxable pay (inc Benefits) YTD</th>
+                     <th scope="col" id="th-tax-ytd">Total tax YTD</th>
+                     <th scope="col" id="th-employee-contributions-ytd">Employee contributions YTD</th>
+                     <th scope="col" id="th-taxable-benefits-ytd">Benefits taxed YTD</th>
+                     <th scope="col" id="th-pension-net-ytd">Pension under net pay YTD</th>
+                     <th scope="col" id="th-pension-not-net-ytd">Pension not under net pay YTD</th>
+                     <th scope="col" id="th-merger-indicator">RTE submission date</th>
+                     <th scope="col" id="th-payment-indicator"></th>
+                 </tr>
+                 </thead>
+                 <tbody>
+                 <tr>
+              <td>01/05/15</td>
+              <td class="textCenter">15-16</td>
+              <td class="textCenter">Monthly</td>
+              
+              <td class="textCenter">1</td>
+              <td class="numeric">69.67</td>
+              <td class="numeric" scope="col">55.87</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">
+                <a id="deductions-breakdown" href="#" data-date="01/05/15" data-deduction="13.80" data-tax="13.80" data-nic="0.00" data-pensioncontribution="0.00" class="deductions">
+                  <span>13.80</span>
+                </a>
+              </td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">69.67</td>
+                      <td class="numeric">13.80</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td>04/05/15</td>
+              <td>
+                         
+                         
+                         
+                         
+                         <!--
+                         *** Flexible pension column not available yet**
+                         <p data-th-if="${payment.????}">Flexible pension</p>
+                         -->
+                      </td>
+
+                 </tr>
+                 <tr>
+              <td>01/04/15</td>
+              <td class="textCenter">14-15</td>
+              <td class="textCenter">Monthly</td>
+              
+              <td class="textCenter">12</td>
+              <td class="numeric">69.67</td>
+              <td class="numeric" scope="col">55.67</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">
+                <a id="deductions-breakdown" href="#" data-date="01/04/15" data-deduction="14.00" data-tax="14.00" data-nic="0.00" data-pensioncontribution="0.00" class="deductions">
+                  <span>14.00</span>
+                </a>
+              </td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">836.04</td>
+                      <td class="numeric">167.20</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td>04/04/15</td>
+              <td>
+                         
+                         
+                         
+                         
+                         <!--
+                         *** Flexible pension column not available yet**
+                         <p data-th-if="${payment.????}">Flexible pension</p>
+                         -->
+                      </td>
+
+                 </tr>
+                 <tr>
+              <td>27/02/15</td>
+              <td class="textCenter">14-15</td>
+              <td class="textCenter">Monthly</td>
+              
+              <td class="textCenter">11</td>
+              <td class="numeric">69.67</td>
+              <td class="numeric" scope="col">55.67</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">
+                <a id="deductions-breakdown" href="#" data-date="27/02/15" data-deduction="14.00" data-tax="14.00" data-nic="0.00" data-pensioncontribution="0.00" class="deductions">
+                  <span>14.00</span>
+                </a>
+              </td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">766.37</td>
+                      <td class="numeric">153.20</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td>02/03/15</td>
+              <td>
+                         
+                         
+                         
+                         
+                         <!--
+                         *** Flexible pension column not available yet**
+                         <p data-th-if="${payment.????}">Flexible pension</p>
+                         -->
+                      </td>
+
+                 </tr>
+                 <tr>
+              <td>30/01/15</td>
+              <td class="textCenter">14-15</td>
+              <td class="textCenter">Monthly</td>
+              
+              <td class="textCenter">10</td>
+              <td class="numeric">69.67</td>
+              <td class="numeric" scope="col">55.87</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">
+                <a id="deductions-breakdown" href="#" data-date="30/01/15" data-deduction="13.80" data-tax="13.80" data-nic="0.00" data-pensioncontribution="0.00" class="deductions">
+                  <span>13.80</span>
+                </a>
+              </td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">696.70</td>
+                      <td class="numeric">139.20</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td>02/02/15</td>
+              <td>
+                         
+                         
+                         
+                         
+                         <!--
+                         *** Flexible pension column not available yet**
+                         <p data-th-if="${payment.????}">Flexible pension</p>
+                         -->
+                      </td>
+
+                 </tr>
+                 <tr>
+              <td>31/12/14</td>
+              <td class="textCenter">14-15</td>
+              <td class="textCenter">Monthly</td>
+              
+              <td class="textCenter">9</td>
+              <td class="numeric">69.67</td>
+              <td class="numeric" scope="col">55.67</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">
+                <a id="deductions-breakdown" href="#" data-date="31/12/14" data-deduction="14.00" data-tax="14.00" data-nic="0.00" data-pensioncontribution="0.00" class="deductions">
+                  <span>14.00</span>
+                </a>
+              </td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">627.03</td>
+                      <td class="numeric">125.40</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td>03/01/15</td>
+              <td>
+                         
+                         
+                         
+                         
+                         <!--
+                         *** Flexible pension column not available yet**
+                         <p data-th-if="${payment.????}">Flexible pension</p>
+                         -->
+                      </td>
+
+                 </tr>
+                 <tr>
+              <td>01/12/14</td>
+              <td class="textCenter">14-15</td>
+              <td class="textCenter">Monthly</td>
+              
+              <td class="textCenter">8</td>
+              <td class="numeric">69.67</td>
+              <td class="numeric" scope="col">55.67</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">
+                <a id="deductions-breakdown" href="#" data-date="01/12/14" data-deduction="14.00" data-tax="14.00" data-nic="0.00" data-pensioncontribution="0.00" class="deductions">
+                  <span>14.00</span>
+                </a>
+              </td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">557.36</td>
+                      <td class="numeric">111.40</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td>04/12/14</td>
+              <td>
+                         
+                         
+                         
+                         
+                         <!--
+                         *** Flexible pension column not available yet**
+                         <p data-th-if="${payment.????}">Flexible pension</p>
+                         -->
+                      </td>
+
+                 </tr>
+                 <tr>
+              <td>31/10/14</td>
+              <td class="textCenter">14-15</td>
+              <td class="textCenter">Monthly</td>
+              
+              <td class="textCenter">7</td>
+              <td class="numeric">69.67</td>
+              <td class="numeric" scope="col">55.87</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">
+                <a id="deductions-breakdown" href="#" data-date="31/10/14" data-deduction="13.80" data-tax="13.80" data-nic="0.00" data-pensioncontribution="0.00" class="deductions">
+                  <span>13.80</span>
+                </a>
+              </td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">487.69</td>
+                      <td class="numeric">97.40</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td>03/11/14</td>
+              <td>
+                         
+                         
+                         
+                         
+                         <!--
+                         *** Flexible pension column not available yet**
+                         <p data-th-if="${payment.????}">Flexible pension</p>
+                         -->
+                      </td>
+
+                 </tr>
+                 <tr>
+              <td>01/10/14</td>
+              <td class="textCenter">14-15</td>
+              <td class="textCenter">Monthly</td>
+              
+              <td class="textCenter">6</td>
+              <td class="numeric">69.67</td>
+              <td class="numeric" scope="col">55.67</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">
+                <a id="deductions-breakdown" href="#" data-date="01/10/14" data-deduction="14.00" data-tax="14.00" data-nic="0.00" data-pensioncontribution="0.00" class="deductions">
+                  <span>14.00</span>
+                </a>
+              </td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">418.02</td>
+                      <td class="numeric">83.60</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td>04/10/14</td>
+              <td>
+                         
+                         
+                         
+                         
+                         <!--
+                         *** Flexible pension column not available yet**
+                         <p data-th-if="${payment.????}">Flexible pension</p>
+                         -->
+                      </td>
+
+                 </tr>
+                 
+                 
+                 </tbody>
+             </table>
+
+
+          <h3 class="heading-medium">Asda (02/07/13 - 29/09/14)</h3>
+
+             <table id="tbl-payments" summary="Table for EmployerName1 Pension,  Start date not stated  to End date not stated">
+                 <thead>
+                 <tr>
+                     <th scope="col" id="th-date">Date paid</th>
+                     <th scope="col" id="th-tax-year" class="textCenter">Tax year</th>
+                     <th scope="col" id="th-frequency" class="textCenter">Frequency</th>
+                     <th scope="col" id="th-week-period" class="textCenter">Period</th>
+                     <th scope="col" id="th-gross" class="numeric">Gross</th>
+                     <th scope="col" id="th-net" class="numeric">Net</th>
+                     <th scope="col" id="th-payments-not-subject-to-tax" class="numeric">Payments not subject to tax</th>
+                     <th scope="col" id="th-deductions-from-net-pay" class="numeric">Deductions from net pay</th>
+                     <th scope="col" id="th-deductions-from-gross-pay" class="numeric">Deductions from gross pay</th>
+                     <th scope="col" id="th-benefits-in-kind" class="numeric">Benefits in kind</th>
+                     <th scope="col" id="th-taxable-pay-ytd">Taxable pay (inc Benefits) YTD</th>
+                     <th scope="col" id="th-tax-ytd">Total tax YTD</th>
+                     <th scope="col" id="th-employee-contributions-ytd">Employee contributions YTD</th>
+                     <th scope="col" id="th-taxable-benefits-ytd">Benefits taxed YTD</th>
+                     <th scope="col" id="th-pension-net-ytd">Pension under net pay YTD</th>
+                     <th scope="col" id="th-pension-not-net-ytd">Pension not under net pay YTD</th>
+                     <th scope="col" id="th-merger-indicator">RTE submission date</th>
+                     <th scope="col" id="th-payment-indicator"></th>
+                 </tr>
+                 </thead>
+                 <tbody>
+                 <tr>
+              <td>01/05/15</td>
+              <td class="textCenter">15-16</td>
+              <td class="textCenter">Monthly</td>
+              
+              <td class="textCenter">1</td>
+              <td class="numeric">69.67</td>
+              <td class="numeric" scope="col">55.87</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">
+                <a id="deductions-breakdown" href="#" data-date="01/05/15" data-deduction="13.80" data-tax="13.80" data-nic="0.00" data-pensioncontribution="0.00" class="deductions">
+                  <span>13.80</span>
+                </a>
+              </td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">69.67</td>
+                      <td class="numeric">13.80</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td>04/05/15</td>
+              <td>
+                         
+                         
+                         
+                         
+                         <!--
+                         *** Flexible pension column not available yet**
+                         <p data-th-if="${payment.????}">Flexible pension</p>
+                         -->
+                      </td>
+
+                 </tr>
+                 <tr>
+              <td>01/04/15</td>
+              <td class="textCenter">14-15</td>
+              <td class="textCenter">Monthly</td>
+              
+              <td class="textCenter">12</td>
+              <td class="numeric">69.67</td>
+              <td class="numeric" scope="col">55.67</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">
+                <a id="deductions-breakdown" href="#" data-date="01/04/15" data-deduction="14.00" data-tax="14.00" data-nic="0.00" data-pensioncontribution="0.00" class="deductions">
+                  <span>14.00</span>
+                </a>
+              </td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">836.04</td>
+                      <td class="numeric">167.20</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td>04/04/15</td>
+              <td>
+                         
+                         
+                         
+                         
+                         <!--
+                         *** Flexible pension column not available yet**
+                         <p data-th-if="${payment.????}">Flexible pension</p>
+                         -->
+                      </td>
+
+                 </tr>
+                 <tr>
+              <td>27/02/15</td>
+              <td class="textCenter">14-15</td>
+              <td class="textCenter">Monthly</td>
+              
+              <td class="textCenter">11</td>
+              <td class="numeric">69.67</td>
+              <td class="numeric" scope="col">55.67</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">
+                <a id="deductions-breakdown" href="#" data-date="27/02/15" data-deduction="14.00" data-tax="14.00" data-nic="0.00" data-pensioncontribution="0.00" class="deductions">
+                  <span>14.00</span>
+                </a>
+              </td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">766.37</td>
+                      <td class="numeric">153.20</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td>02/03/15</td>
+              <td>
+                         
+                         
+                         
+                         
+                         <!--
+                         *** Flexible pension column not available yet**
+                         <p data-th-if="${payment.????}">Flexible pension</p>
+                         -->
+                      </td>
+
+                 </tr>
+                 <tr>
+              <td>30/01/15</td>
+              <td class="textCenter">14-15</td>
+              <td class="textCenter">Monthly</td>
+              
+              <td class="textCenter">10</td>
+              <td class="numeric">69.67</td>
+              <td class="numeric" scope="col">55.87</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">
+                <a id="deductions-breakdown" href="#" data-date="30/01/15" data-deduction="13.80" data-tax="13.80" data-nic="0.00" data-pensioncontribution="0.00" class="deductions">
+                  <span>13.80</span>
+                </a>
+              </td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">696.70</td>
+                      <td class="numeric">139.20</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td>02/02/15</td>
+              <td>
+                         
+                         
+                         
+                         
+                         <!--
+                         *** Flexible pension column not available yet**
+                         <p data-th-if="${payment.????}">Flexible pension</p>
+                         -->
+                      </td>
+
+                 </tr>
+                 <tr>
+              <td>31/12/14</td>
+              <td class="textCenter">14-15</td>
+              <td class="textCenter">Monthly</td>
+              
+              <td class="textCenter">9</td>
+              <td class="numeric">69.67</td>
+              <td class="numeric" scope="col">55.67</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">
+                <a id="deductions-breakdown" href="#" data-date="31/12/14" data-deduction="14.00" data-tax="14.00" data-nic="0.00" data-pensioncontribution="0.00" class="deductions">
+                  <span>14.00</span>
+                </a>
+              </td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">627.03</td>
+                      <td class="numeric">125.40</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td>03/01/15</td>
+              <td>
+                         
+                         
+                         
+                         
+                         <!--
+                         *** Flexible pension column not available yet**
+                         <p data-th-if="${payment.????}">Flexible pension</p>
+                         -->
+                      </td>
+
+                 </tr>
+                 <tr>
+              <td>01/12/14</td>
+              <td class="textCenter">14-15</td>
+              <td class="textCenter">Monthly</td>
+              
+              <td class="textCenter">8</td>
+              <td class="numeric">69.67</td>
+              <td class="numeric" scope="col">55.67</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">
+                <a id="deductions-breakdown" href="#" data-date="01/12/14" data-deduction="14.00" data-tax="14.00" data-nic="0.00" data-pensioncontribution="0.00" class="deductions">
+                  <span>14.00</span>
+                </a>
+              </td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">557.36</td>
+                      <td class="numeric">111.40</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td>04/12/14</td>
+              <td>
+                         
+                         
+                         
+                         
+                         <!--
+                         *** Flexible pension column not available yet**
+                         <p data-th-if="${payment.????}">Flexible pension</p>
+                         -->
+                      </td>
+
+                 </tr>
+                 <tr>
+              <td>31/10/14</td>
+              <td class="textCenter">14-15</td>
+              <td class="textCenter">Monthly</td>
+              
+              <td class="textCenter">7</td>
+              <td class="numeric">69.67</td>
+              <td class="numeric" scope="col">55.87</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">
+                <a id="deductions-breakdown" href="#" data-date="31/10/14" data-deduction="13.80" data-tax="13.80" data-nic="0.00" data-pensioncontribution="0.00" class="deductions">
+                  <span>13.80</span>
+                </a>
+              </td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">487.69</td>
+                      <td class="numeric">97.40</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td>03/11/14</td>
+              <td>
+                         
+                         
+                         
+                         
+                         <!--
+                         *** Flexible pension column not available yet**
+                         <p data-th-if="${payment.????}">Flexible pension</p>
+                         -->
+                      </td>
+
+                 </tr>
+                 <tr>
+              <td>01/10/14</td>
+              <td class="textCenter">14-15</td>
+              <td class="textCenter">Monthly</td>
+              
+              <td class="textCenter">6</td>
+              <td class="numeric">69.67</td>
+              <td class="numeric" scope="col">55.67</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">
+                <a id="deductions-breakdown" href="#" data-date="01/10/14" data-deduction="14.00" data-tax="14.00" data-nic="0.00" data-pensioncontribution="0.00" class="deductions">
+                  <span>14.00</span>
+                </a>
+              </td>
+              <td class="numeric">0.00</td>
+              <td class="numeric">418.02</td>
+                      <td class="numeric">83.60</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td class="numeric">0.00</td>
+                      <td>04/10/14</td>
+              <td>
+                         
+                         
+                         
+                         
+                         <!--
+                         *** Flexible pension column not available yet**
+                         <p data-th-if="${payment.????}">Flexible pension</p>
+                         -->
+                      </td>
+
+                 </tr>
+                 
+                 
+                 </tbody>
+             </table>
+
 
 
       </div>
