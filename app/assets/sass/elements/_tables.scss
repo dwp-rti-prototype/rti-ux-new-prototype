@@ -32,19 +32,43 @@ table td.numeric {
   text-align: right;
 }
 
-.record tr:hover {
+.record {
+
+  tr {
+    border-bottom:2px solid #fff;
+  }
+
+  td {
+    padding-left:5px;
+  }
+
+  tr:hover {
   background: #f0f1f2;
   color: #000;
-}
+  }
 
-.record tr a {
+  tr a {
   display:block;
   font-weight:bold;
   padding:5px;
   margin:-5px;
-}
+  }
 
-.record tr a.none {
+  tr a.none {
   font-weight:normal;
   text-decoration:none;
+  }
+
+  .live {
+    background:#a0d3ba;
+  }
+
+  .pro {
+    background:#f6b492;
+  }
+
 }
+
+
+
+

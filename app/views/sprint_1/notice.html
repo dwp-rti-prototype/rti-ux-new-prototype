@@ -1,0 +1,90 @@
+{{<layout}}
+
+{{$pageTitle}}
+  GOV.UK prototyping kit
+{{/pageTitle}}
+
+{{$propositionHeader}}
+  {{>includes/propositional_navigation}}
+{{/propositionHeader}}
+
+{{$content}}
+
+
+<main id="content" role="main">
+
+ <div class="grid-row">        
+
+
+  <!-- Start three quarters container for main content columns -->
+  <div class="column" style="margin-left:-50px">
+
+    <div class="grid-row">
+
+        <div class="column-half">   
+
+            <br>
+            <h1 class="heading-large" style="padding-top:0">Interest set. Available in 24 hours.</h1>
+
+            <h2 class="heading-medium">Now find or open a record below</h2>
+
+            <br>
+               <div class="form-group">
+                  <label class="form-label" for="inital">Enter NINO</label>
+                  <input class="form-control" id="inital" type="text"> &nbsp;
+                  <a href="small" class="button button-get-started" value="Submit">Search</a>
+                </div> 
+
+
+           </div>
+
+     <!--End NINO row-->
+       </div>    
+
+     <div class="grid-row">
+
+       <div class="column-half"> 
+
+            <h3 class="heading-small">Open cases</h3>
+            
+             <div class="form-group">
+                         <table class="record">
+                              <tbody>
+                                <tr>
+                                  <td class="bold"><a class="none" href="#">NINO&#x25BC;</a></td>
+                                  <td class="bold"><a class="none" href="#">Surname&#x25BC;</a></td>
+                                  <td class="bold"><a class="none" href="#">Status&#x25BC;</a></td>
+                              </tr>
+                             <br>                            
+                              <tr class="live">
+                                  <td><a href="small">JC458596X</a></td>
+                                  <td>Smith</td>
+                                  <td>Live</td>
+                              </tr>
+                              <tr class="pro">
+                                  <td>JC373163X</td>
+                                  <td>Jones</td>
+                                  <td>Processing</td>
+                              </tr>
+                              <tr class="live">
+                                  <td><a href="small">JC873633A</a></td>
+                                  <td>Peters</td>
+                                  <td>Live</td>
+                              </tr>
+                          </tbody>
+                      </table>
+             </div>
+
+
+      <!-- End column -->
+         </div>
+
+    <!-- End row -->
+     </div>     
+
+
+</main>
+{{/content}}
+
+{{/layout}}
+
